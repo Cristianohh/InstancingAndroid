@@ -1,0 +1,12 @@
+# no .DS_Store files
+.DS_Store
+# ignore all files in the InstancingAndroid/bin/ directory
+InstancingAndroid/bin/
+# ignore all files in the InstancingAndroid/gen/ directory
+InstancingAndroid/gen/
+# ignore all files in the InstancingAndroid/libs/ directory
+InstancingAndroid/libs/
+# ignore all files in the InstancingAndroid/obj/ directory
+InstancingAndroid/obj/
+# ignore all files in the ProjectFiles/bin directory
+ProjectFiles/bin

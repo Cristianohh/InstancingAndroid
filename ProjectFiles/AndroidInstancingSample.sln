@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPUT", "..\CPUT\CPUT.vcxproj", "{8F743F56-48A8-47C9-8906-9675956F203C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstancingAndroid", "SampleStartAndroid.vcxproj", "{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug-Android|Mixed Platforms = Debug-Android|Mixed Platforms
+		Debug-Android|Win32 = Debug-Android|Win32
+		Debug-Android|x64 = Debug-Android|x64
+		Debug-GL|Mixed Platforms = Debug-GL|Mixed Platforms
+		Debug-GL|Win32 = Debug-GL|Win32
+		Debug-GL|x64 = Debug-GL|x64
+		Debug-GLES|Mixed Platforms = Debug-GLES|Mixed Platforms
+		Debug-GLES|Win32 = Debug-GLES|Win32
+		Debug-GLES|x64 = Debug-GLES|x64
+		Release-Android|Mixed Platforms = Release-Android|Mixed Platforms
+		Release-Android|Win32 = Release-Android|Win32
+		Release-Android|x64 = Release-Android|x64
+		Release-GL|Mixed Platforms = Release-GL|Mixed Platforms
+		Release-GL|Win32 = Release-GL|Win32
+		Release-GL|x64 = Release-GL|x64
+		Release-GLES|Mixed Platforms = Release-GLES|Mixed Platforms
+		Release-GLES|Win32 = Release-GLES|Win32
+		Release-GLES|x64 = Release-GLES|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-Android|Mixed Platforms.ActiveCfg = Debug-Android|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-Android|Mixed Platforms.Build.0 = Debug-Android|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-Android|Win32.ActiveCfg = Debug-Android|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-Android|x64.ActiveCfg = Debug-Android|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GL|Mixed Platforms.ActiveCfg = Debug-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GL|Mixed Platforms.Build.0 = Debug-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GL|Win32.ActiveCfg = Debug-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GL|Win32.Build.0 = Debug-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GL|x64.ActiveCfg = Debug-GL|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GL|x64.Build.0 = Debug-GL|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GLES|Mixed Platforms.ActiveCfg = Debug-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GLES|Mixed Platforms.Build.0 = Debug-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GLES|Win32.ActiveCfg = Debug-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GLES|Win32.Build.0 = Debug-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GLES|x64.ActiveCfg = Debug-GLES|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Debug-GLES|x64.Build.0 = Debug-GLES|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-Android|Mixed Platforms.ActiveCfg = Release-Android|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-Android|Mixed Platforms.Build.0 = Release-Android|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-Android|Win32.ActiveCfg = Release-Android|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-Android|x64.ActiveCfg = Release-Android|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GL|Mixed Platforms.ActiveCfg = Release-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GL|Mixed Platforms.Build.0 = Release-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GL|Win32.ActiveCfg = Release-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GL|Win32.Build.0 = Release-GL|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GL|x64.ActiveCfg = Release-GL|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GL|x64.Build.0 = Release-GL|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GLES|Mixed Platforms.ActiveCfg = Release-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GLES|Mixed Platforms.Build.0 = Release-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GLES|Win32.ActiveCfg = Release-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GLES|Win32.Build.0 = Release-GLES|Win32
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GLES|x64.ActiveCfg = Release-GLES|x64
+		{8F743F56-48A8-47C9-8906-9675956F203C}.Release-GLES|x64.Build.0 = Release-GLES|x64
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-Android|Mixed Platforms.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-Android|Mixed Platforms.Build.0 = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-Android|Win32.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-Android|Win32.Build.0 = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-Android|x64.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-Android|x64.Build.0 = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GL|Mixed Platforms.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GL|Mixed Platforms.Build.0 = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GL|Win32.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GL|x64.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GLES|Mixed Platforms.ActiveCfg = Debug-GLES|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GLES|Mixed Platforms.Build.0 = Debug-GLES|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GLES|Win32.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Debug-GLES|x64.ActiveCfg = Debug-GLES|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-Android|Mixed Platforms.ActiveCfg = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-Android|Mixed Platforms.Build.0 = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-Android|Win32.ActiveCfg = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-Android|Win32.Build.0 = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-Android|x64.ActiveCfg = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-Android|x64.Build.0 = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GL|Mixed Platforms.ActiveCfg = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GL|Mixed Platforms.Build.0 = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GL|Win32.ActiveCfg = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GL|x64.ActiveCfg = Release|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GLES|Mixed Platforms.ActiveCfg = Release-GLES|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GLES|Mixed Platforms.Build.0 = Release-GLES|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GLES|Win32.ActiveCfg = Debug|Win32
+		{9E3D809B-EA97-445D-A65D-3F47B4F7CE1C}.Release-GLES|x64.ActiveCfg = Release-GLES|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

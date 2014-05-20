@@ -1,0 +1,42 @@
+// Created with FBXConvert.exe: Fri Feb 21 12:47:03 2014
+[node 0]
+type = null
+name = instangeGrp
+parent = -1
+matrixRow0 = 1 0 -0 0
+matrixRow1 = -0 1 -0 0
+matrixRow2 = 0 0 1 0
+matrixRow3 = 0 0 -0 1
+scale = 1 1 1
+rotation = -0 0 0
+position = 0 0 -0
+[node 1]
+type = model
+name = concrete
+parent = 0
+matrixRow0 = 1 0 -0 0
+matrixRow1 = -0 1 -0 0
+matrixRow2 = 0 0 1 0
+matrixRow3 = 0 0 -0 1
+scale = 1 1 1
+rotation = -0 0 0
+position = 0 0 -0
+BoundingBoxCenter = -5.922628402709961 0.3648014068603516 -0 
+BoundingBoxHalf = 41.19095420837402 50.36479377746582 50 
+meshcount = 1
+material0 = concreteMultiMaterial
+[node 2]
+type = model
+name = techALow
+parent = 0
+matrixRow0 = 1 0 -0 0
+matrixRow1 = -0 1 -0 0
+matrixRow2 = 0 0 1 0
+matrixRow3 = 0 0 -0 1
+scale = 1 1 1
+rotation = -0 0 0
+position = 0 0 -0
+BoundingBoxCenter = -6.907731056213379 11.89536666870117 0.02894020080566406 
+BoundingBoxHalf = 37.02869319915772 15.76255607604981 31.43402099609375 
+meshcount = 1
+material0 = techALowMultiMataterial

@@ -1,0 +1,13 @@
+[material]
+Texture0 = concreteSupportDM.dds
+Texture1 = concreteSupportNM.dds
+Texture2 = concreteSupportSM.dds
+Texture3 = concreteSupportAO.dds
+Texture1Srgb = false
+VertexShaderFileOGL_1    = supportShaderNonInstanced.glsl
+VertexShaderMain    = Main
+VertexShaderProfile = vs_4_0
+FragmentShaderFileOGL_1     = supportShaderNonInstanced.glsl
+PixelShaderMain     = Main
+PixelShaderProfile  = ps_4_0
+RenderStateFile     = %Default.rs

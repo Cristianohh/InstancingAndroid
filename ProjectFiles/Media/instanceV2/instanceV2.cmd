@@ -1,0 +1,1 @@
+FBXConvert.exe -input:instanceV2.fbx -copytextures:- -generatetangents:+ -writemtl:- 

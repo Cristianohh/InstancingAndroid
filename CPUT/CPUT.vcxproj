@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-Android|Win32">
+      <Configuration>Debug-Android</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Android|x64">
+      <Configuration>Debug-Android</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-GLES|Win32">
+      <Configuration>Debug-GLES</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-GLES|x64">
+      <Configuration>Debug-GLES</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-GL|Win32">
+      <Configuration>Debug-GL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-GL|x64">
+      <Configuration>Debug-GL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Android|Win32">
+      <Configuration>Release-Android</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Android|x64">
+      <Configuration>Release-Android</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-GLES|Win32">
+      <Configuration>Release-GLES</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-GLES|x64">
+      <Configuration>Release-GLES</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-GL|Win32">
+      <Configuration>Release-GL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-GL|x64">
+      <Configuration>Release-GL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CPUT\CPUTAnimation.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetLibrary.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetLibraryOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetSet.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetSetOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTBufferOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTButton.cpp" />
+    <ClCompile Include="CPUT\CPUTCamera.cpp" />
+    <ClCompile Include="CPUT\CPUTCheckbox.cpp" />
+    <ClCompile Include="CPUT\CPUTConfigBlock.cpp" />
+    <ClCompile Include="CPUT\CPUTControl.cpp" />
+    <ClCompile Include="CPUT\CPUTDropdown.cpp" />
+    <ClCompile Include="CPUT\CPUTFont.cpp" />
+    <ClCompile Include="CPUT\CPUTFrustum.cpp" />
+    <ClCompile Include="CPUT\CPUTGuiController.cpp" />
+    <ClCompile Include="CPUT\CPUTGuiControllerOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTITTTaskMarker.cpp" />
+    <ClCompile Include="CPUT\CPUTLight.cpp" />
+    <ClCompile Include="CPUT\CPUTMaterial.cpp" />
+    <ClCompile Include="CPUT\CPUTMaterialEffect.cpp" />
+    <ClCompile Include="CPUT\CPUTMaterialEffectOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTMesh.cpp" />
+    <ClCompile Include="CPUT\CPUTMeshOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTModel.cpp" />
+    <ClCompile Include="CPUT\CPUTModelOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTNullNode.cpp" />
+    <ClCompile Include="CPUT\CPUTOSServicesWin.cpp" />
+    <ClCompile Include="CPUT\CPUTParser.cpp" />
+    <ClCompile Include="CPUT\CPUTPerfTaskMarker.cpp" />
+    <ClCompile Include="CPUT\CPUTRenderNode.cpp" />
+    <ClCompile Include="CPUT\CPUTRenderStateBlock.cpp" />
+    <ClCompile Include="CPUT\CPUTRenderStateBlockOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTRenderTargetOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTScene.cpp" />
+    <ClCompile Include="CPUT\CPUTShaderOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTSkeleton.cpp" />
+    <ClCompile Include="CPUT\CPUTSlider.cpp" />
+    <ClCompile Include="CPUT\CPUTSprite.cpp" />
+    <ClCompile Include="CPUT\CPUTSpriteOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTText.cpp" />
+    <ClCompile Include="CPUT\CPUTTexture.cpp" />
+    <ClCompile Include="CPUT\CPUTTextureOGL.cpp" />
+    <ClCompile Include="CPUT\CPUTTimerWin.cpp" />
+    <ClCompile Include="CPUT\CPUTWindowAndroid.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-Android|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-Android|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-Android|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-Android|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTWindowWin.cpp" />
+    <ClCompile Include="CPUT\CPUT_OGL.cpp" />
+    <ClCompile Include="CPUT\CPUT_OGL_GL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUT_OGL_GLES.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="middleware\glew-1.10.0\src\glew.c" />
+    <ClCompile Include="middleware\libktx\checkheader.c" />
+    <ClCompile Include="middleware\libktx\errstr.c" />
+    <ClCompile Include="middleware\libktx\hashtable.c" />
+    <ClCompile Include="middleware\libktx\loader.c" />
+    <ClCompile Include="middleware\libktx\swap.c" />
+    <ClCompile Include="middleware\libktx\writer.c" />
+    <ClCompile Include="middleware\stb\stb_image.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPUT\CPUT.h" />
+    <ClInclude Include="CPUT\CPUTAnimation.h" />
+    <ClInclude Include="CPUT\CPUTAssetLibrary.h" />
+    <ClInclude Include="CPUT\CPUTAssetLibraryOGL.h" />
+    <ClInclude Include="CPUT\CPUTAssetSet.h" />
+    <ClInclude Include="CPUT\CPUTAssetSetOGL.h" />
+    <ClInclude Include="CPUT\CPUTBuffer.h" />
+    <ClInclude Include="CPUT\CPUTBufferOGL.h" />
+    <ClInclude Include="CPUT\CPUTButton.h" />
+    <ClInclude Include="CPUT\CPUTCallbackHandler.h" />
+    <ClInclude Include="CPUT\CPUTCamera.h" />
+    <ClInclude Include="CPUT\CPUTCheckbox.h" />
+    <ClInclude Include="CPUT\CPUTConfigBlock.h" />
+    <ClInclude Include="CPUT\CPUTControl.h" />
+    <ClInclude Include="CPUT\CPUTCrossPlatform.h" />
+    <ClInclude Include="CPUT\CPUTDropdown.h" />
+    <ClInclude Include="CPUT\CPUTEventHandler.h" />
+    <ClInclude Include="CPUT\CPUTFont.h" />
+    <ClInclude Include="CPUT\CPUTFrustum.h" />
+    <ClInclude Include="CPUT\CPUTGuiController.h" />
+    <ClInclude Include="CPUT\CPUTGuiControllerOGL.h" />
+    <ClInclude Include="CPUT\CPUTInputLayoutCache.h" />
+    <ClInclude Include="CPUT\CPUTITTTaskMarker.h" />
+    <ClInclude Include="CPUT\CPUTLight.h" />
+    <ClInclude Include="CPUT\CPUTMaterial.h" />
+    <ClInclude Include="CPUT\CPUTMaterialEffect.h" />
+    <ClInclude Include="CPUT\CPUTMaterialEffectOGL.h" />
+    <ClInclude Include="CPUT\CPUTMath.h" />
+    <ClInclude Include="CPUT\CPUTMesh.h" />
+    <ClInclude Include="CPUT\CPUTMeshOGL.h" />
+    <ClInclude Include="CPUT\CPUTModel.h" />
+    <ClInclude Include="CPUT\CPUTModelOGL.h" />
+    <ClInclude Include="CPUT\CPUTNullNode.h" />
+    <ClInclude Include="CPUT\CPUTOSServices.h" />
+    <ClInclude Include="CPUT\CPUTParser.h" />
+    <ClInclude Include="CPUT\CPUTPerfTaskMarker.h" />
+    <ClInclude Include="CPUT\CPUTRefCount.h" />
+    <ClInclude Include="CPUT\CPUTRenderNode.h" />
+    <ClInclude Include="CPUT\CPUTRenderParams.h" />
+    <ClInclude Include="CPUT\CPUTRenderStateBlockOGL.h" />
+    <ClInclude Include="CPUT\CPUTRenderStateMapsOGL.h" />
+    <ClInclude Include="CPUT\CPUTRenderTargetOGL.h" />
+    <ClInclude Include="CPUT\CPUTResource.h" />
+    <ClInclude Include="CPUT\CPUTScene.h" />
+    <ClInclude Include="CPUT\CPUTShaderOGL.h" />
+    <ClInclude Include="CPUT\CPUTSkeleton.h" />
+    <ClInclude Include="CPUT\CPUTSlider.h" />
+    <ClInclude Include="CPUT\CPUTSprite.h" />
+    <ClInclude Include="CPUT\CPUTSpriteOGL.h" />
+    <ClInclude Include="CPUT\CPUTText.h" />
+    <ClInclude Include="CPUT\CPUTTexture.h" />
+    <ClInclude Include="CPUT\CPUTTextureOGL.h" />
+    <ClInclude Include="CPUT\CPUTTimer.h" />
+    <ClInclude Include="CPUT\CPUTTimerWin.h" />
+    <ClInclude Include="CPUT\CPUTWindow.h" />
+    <ClInclude Include="CPUT\CPUTWindowAndroid.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-Android|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-Android|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-Android|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-Android|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTWindowWin.h" />
+    <ClInclude Include="CPUT\CPUT_OGL.h" />
+    <ClInclude Include="middleware\glew-1.10.0\include\GL\glew.h" />
+    <ClInclude Include="middleware\libktx\gles1_funcptrs.h" />
+    <ClInclude Include="middleware\libktx\gles2_funcptrs.h" />
+    <ClInclude Include="middleware\libktx\gles3_funcptrs.h" />
+    <ClInclude Include="middleware\libktx\gl_funcptrs.h" />
+    <ClInclude Include="middleware\libktx\ktx.h" />
+    <ClInclude Include="middleware\libktx\ktxint.h" />
+    <ClInclude Include="middleware\libktx\uthash.h" />
+    <ClInclude Include="middleware\stb\stb_image.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F743F56-48A8-47C9-8906-9675956F203C}</ProjectGuid>
+    <RootNamespace>CPUT</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="opengl.props" />
+    <Import Project="platform-android.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="opengl.props" />
+    <Import Project="platform-android.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="platform-windows.props" />
+    <Import Project="opengl.props" />
+    <Import Project="release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|Win32'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|Win32'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|x64'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|x64'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|x64'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|x64'">
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)_$(Platform)</TargetName>
+    <OutDir>$(SolutionDir)\..\lib\$(Platform)\$(PlatformToolset)\$(BasicConfig)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CPUT_FOR_OGL;KTX_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CPUT_FOR_OGLES;CPUT_FOR_OGLES3;CPUT_FOR_OGLES3_1;KTX_OPENGL_ES3;SUPPORT_SOFTWARE_ETC_UNPACK=0;_UNICODE;UNICODE;CPUT_OS_WINDOWS;NOMINMAX;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CPUT_FOR_OGL;KTX_OPENGL;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Android|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CPUT_FOR_OGLES;CPUT_FOR_OGLES3;CPUT_FOR_OGLES3_1;KTX_OPENGL_ES3;SUPPORT_SOFTWARE_ETC_UNPACK=0;_UNICODE;UNICODE;CPUT_OS_WINDOWS;NOMINMAX;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Android|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
