@@ -6,6 +6,6 @@ or
 
 Navigate to ./InstancingAndroid/ and run the following:
 android update project -t "android-19" -p .
-ndk-build NDK-DEBUG=1 -C .
+ndk-build NDK_DEBUG=1 -C .
 ant debug -f .
 ant installd -f .
